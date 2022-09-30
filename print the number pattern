@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class day31{
+	public static void main(String args[]){
+		Scanner lol=new Scanner(System.in);
+		try{
+			System.out.print("Enter the row value :");
+			int row=lol.nextInt();
+			if(row>0){
+			for(int i=0;i<row;i++){
+				for(int j=0;j<i;j++){
+					System.out.print("1 ");
+				}
+			System.out.println();
+			}
+			for(int y=row;y>0;y--){
+				for(int z=y;z>0;z--){
+					System.out.print("1 ");
+				}
+			System.out.println();
+			}}
+			else{
+				System.out.println("INvalid Input....");
+			}
+
+		}
+		catch(InputMismatchException e){
+			System.out.println("Invalid Input...");
+		}
+	}
+}
